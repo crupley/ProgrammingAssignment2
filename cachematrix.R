@@ -22,7 +22,8 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Checks if solution is present in cache, if
+## Checks if solution is present in cache, if so it retrieves it,
+## if not, it calculates the solution and caches it
 
 cacheSolve <- function(x, ...) {
   mat <- x$getinverse()
